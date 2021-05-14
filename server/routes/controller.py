@@ -73,16 +73,9 @@ def annotator():
             file_object.write(name)
             file_object.close()
             result = {'message': name}
-            log = {
-                "input": find_entities['texts'],
-                "output": result
-            }
-            my_logger.info(log)
-            return jsonify(result)
-       
 
             log = {
-                "input": name,
+                "input": "test",
                 "output": result
             }
             my_logger.info(log)
